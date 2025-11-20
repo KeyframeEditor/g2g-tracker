@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Realtime Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Live Event Bar at Top -->
+    <div id="live-bar" class="live-bar">
+        <div class="live-content">
+            <span class="live-label">LIVE CURRENT EVENT:</span>
+            <div id="live-event-info">
+                <div class="live-title" id="live-title">Loading...</div>
+                <div class="live-time" id="live-time"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Timeline Container -->
+    <div class="timeline-container">
+        <!-- Fixed Center Needle -->
+        <div id="needle" class="needle">
+            <div class="needle-line"></div>
+            <div class="needle-indicator">NOW</div>
+        </div>
+
+        <!-- Scrollable Timeline -->
+        <div id="timeline" class="timeline">
+            <!-- Timeline blocks will be generated here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
